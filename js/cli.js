@@ -8,7 +8,7 @@ const errors = {
 }
 
 const struct = {
-  JesseDaniels: ['about', 'location', 'label', 'skills', 'awards', 'education']
+  JesseDaniels: ['about', 'contact']
 }
 
 const commands = {}
