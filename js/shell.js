@@ -1,12 +1,13 @@
 /* global $, localStorage */
 
+
 class Shell {
   constructor (term, commands) {
     this.commands = commands
     this.setupListeners(term)
     this.term = term
 
-    localStorage.directory = 'root'
+    localStorage.directory = 'JesseDaniels'
     localStorage.history = JSON.stringify('')
     localStorage.historyIndex = -1 // Solves undefined command on refreshing the website
     localStorage.inHistory = false // To prevent down arrow traversal when not required
@@ -145,7 +146,7 @@ class Shell {
     $('#terminal').html(
       `<p class="hidden">
         <span class="prompt">
-          <span class="root">root</span>
+          <span class="root">JesseDaniels</span>
           <span class="tick">❯</span>
         </span>
         <span contenteditable="true" class="input"></span>
