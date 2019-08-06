@@ -1,6 +1,11 @@
 {
 	"about": "<p>This is the about section 😀</p>",
-	"contact": "<p>This is the contact section</p>",
-	"JesseDaniels": "<p>about.txt <br> contact.txt<br></p>",
+	"resume": "<p><a href='./resume.pdf'>Download here</a></p>",
+	"skills": "<p>This is the skills section 😀</p>",
+	"awards": "<p>Western Connecticut State University Deans List Fall 2009</p>",
+	"label": "<p>Information Security Specialist I</p>",
+	"location": "<p>340 W Rock Ave. New Haven, CT. 06515</p>",
+	"education": "<p>2004-2005 Broward Community College <br> 2005-2010 Western Connecticut State University B.A in Computer Science with a Minor is Computer Security <br> 2017 - Present Sacred Heart University M.S in Cybersecurity, expected graduation date Dec. 2019</p>",
+	"JesseDaniels": "<p>about.txt <br> resume.pdf<br> location.txt<br> label.txt<br> skills.txt<br> awards.txt<br> education.txt<br></p>",
 	"help": "<div> <ul> <li><strong>cat FILENAME</strong> - display FILENAME in window</li><li><strong>ls</strong> - show files in current directory</li><li><strong>history</strong> - see your command history</li><li><strong>clear</strong> - clear current window</ul></div>"
 }
