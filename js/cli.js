@@ -26,16 +26,16 @@ const registerFullscreenToggle = () => {
 }
 
 // create new directory in current directory
-commands.mkdir = () => errors.noWriteAccess
+commands.mkdir = commands.Mkdir = () => errors.noWriteAccess
 
 // create new directory in current directory
-commands.touch = () => errors.noWriteAccess
+commands.touch = commands.Touch = () => errors.noWriteAccess
 
 // remove file from current directory
-commands.rm = () => errors.noWriteAccess
+commands.rm = commands.Rm = () => errors.noWriteAccess
 
 // view contents of specified directory
-commands.ls = (directory) => {
+commands.ls = commands.Ls = (directory) => {
   if (directory === '..' || directory === '~') {
     return systemData['JesseDaniels']
   }
@@ -43,23 +43,23 @@ commands.ls = (directory) => {
 }
 
 // view list of possible commands
-commands.help = () => systemData.help
+commands.help = commands.Help = () => systemData.help
 
 // display current path
-commands.path = () => {
+commands.path = commands.Path = () => {
   const dir = getDirectory()
   return dir === 'JesseDaniels' ? rootPath : `${rootPath}/${dir}`
 }
 
 // see command history
-commands.history = () => {
+commands.history = commands.History = () => {
   let history = localStorage.history
   history = history ? Object.values(JSON.parse(history)) : []
   return `<p>${history.join('<br>')}</p>`
 }
 
 // move into specified directory
-commands.cd = (newDirectory) => {
+commands.cd = commands.Cd = (newDirectory) => {
   const currDir = getDirectory()
   const dirs = Object.keys(struct)
   const newDir = newDirectory ? newDirectory.trim() : ''
@@ -75,7 +75,7 @@ commands.cd = (newDirectory) => {
 }
 
 // display contents of specified file
-commands.cat = (filename) => {
+commands.cat = commands.Cat = (filename) => {
   if (!filename) return errors.fileNotSpecified
 
   const dir = getDirectory()
