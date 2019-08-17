@@ -6,4 +6,4 @@ Portfolio website designed to work as a command prompt built for a client.
 - HTML
 - CSS
 - JQuery
-- XML
+- JSON
