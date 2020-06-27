@@ -8,12 +8,12 @@ const errors = {
 }
 
 const struct = {
-  JesseDaniels: ['about', 'resume', 'skills', 'awards', 'label', 'location', 'education']
+  siddarthsh: ['about', 'skills', 'label', 'location', 'education']
 }
 
 const commands = {}
 let systemData = {}
-const rootPath = 'users/JesseDaniels'
+const rootPath = 'users/siddarthsh'
 
 const getDirectory = () => localStorage.directory
 const setDirectory = (dir) => { localStorage.directory = dir }
@@ -37,7 +37,7 @@ commands.rm = commands.Rm = () => errors.noWriteAccess
 // view contents of specified directory
 commands.ls = commands.Ls = (directory) => {
   if (directory === '..' || directory === '~') {
-    return systemData['JesseDaniels']
+    return systemData['siddarthsh']
   }
   return systemData[getDirectory()]
 }
@@ -48,7 +48,7 @@ commands.help = commands.Help = () => systemData.help
 // display current path
 commands.path = commands.Path = () => {
   const dir = getDirectory()
-  return dir === 'JesseDaniels' ? rootPath : `${rootPath}/${dir}`
+  return dir === 'siddarthsh' ? rootPath : `${rootPath}/${dir}`
 }
 
 // see command history
@@ -67,7 +67,7 @@ commands.cd = commands.Cd = (newDirectory) => {
   if (dirs.includes(newDir) && currDir !== newDir) {
     setDirectory(newDir)
   } else if (newDir === '' || newDir === '~' || (newDir === '..' && dirs.includes(currDir))) {
-    setDirectory('JesseDaniels')
+    setDirectory('siddarthsh')
   } else if (newDir !== '.') {
     return errors.invalidDirectory
   }
