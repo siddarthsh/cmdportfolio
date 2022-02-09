@@ -1,9 +1,9 @@
 {
-	"about": "<p>I'm a freelance web-developer, with a love for design and I'm currently available for freelance projects. Contact me via the following options, I'd love to hear what you're working on :- <br/><a href='mailto:siddarthsharma1077@gmail.com?subject=Hi%20Siddarth!%20%E2%9C%8B'>Email</a><a href='https://github.com/siddarthsh'>Github</a><a href='https://www.linkedin.com/in/siddarthsharma/'>LinkedIn</a><a href='https://www.reddit.com/message/compose/?to=animasugit&subject=Hi%20Siddarth!%20%E2%9C%8B'>Reddit</a><a href='https://discord.gg/VkPKGBG'>Discord</a><a href='https://t.me/animasugit'>Telegram</a></p>",
-	"skills": "<p>My skills include:- <ul><li>ReactJS</li><li>NodeJS</li><li>MongoDB</li></ul></p>",
-	"label": "<p>Software Developer</p>",
-	"location": "<p>Chandigarh, India</p>",
-	"education": "<p>2017-2021 Thapar University, Patiala, India</p>",
+	"about": "<p>about</p>",
+	"skills": "<p>skills</p>",
+	"label": "<p>label</p>",
+	"location": "<p>location</p>",
+	"education": "<p>education</p>",
 	"siddarthsh": "<p>about.txt <br> skills.txt<br> location.txt<br> label.txt<br> education.txt<br></p>",
 	"help": "<div> <ul> <li><strong>cat FILENAME</strong> - display FILENAME in window</li><li><strong>ls</strong> - show files in current directory</li><li><strong>history</strong> - see your command history</li><li><strong>clear</strong> - clear current window</ul></div>"
 }
